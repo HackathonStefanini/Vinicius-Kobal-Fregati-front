@@ -13,11 +13,13 @@ import { MenubarModule } from 'primeng/menubar';
 import {InputTextModule} from 'primeng/inputtext';
 
 import { StefamonService } from './shared/services/stefamon.service';
+import { HomeComponent } from './modules/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StefamonComponent
+    StefamonComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,7 @@ import { StefamonService } from './shared/services/stefamon.service';
     CardModule,
     ButtonModule,
     MenubarModule,
-    InputTextModule
+    InputTextModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

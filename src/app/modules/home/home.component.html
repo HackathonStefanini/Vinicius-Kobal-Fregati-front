@@ -10,17 +10,18 @@
         <h1 class="p-text-center">Cadastrar novo Jogador</h1>
         <div class="p-field p-mt-3">
           <span class="p-float-label">
-            <input id="login" type="text" pInputText> 
+            <input id="login" type="text" pInputText [(ngModel)]="login"> 
             <label for="login">Login</label>
           </span>
         </div>
         <div class="p-field">
           <span class="p-float-label">
-            <input id="senha" type="text" pInputText> 
+            <input id="senha" type="text" pInputText [(ngModel)]="senha"> 
             <label for="senha">Senha</label>
           </span>
         </div>
-        <button pButton type="button" class="p-button-success" label="Cadastrar"></button>
+        <button pButton type="button" class="p-button-success" label="Cadastrar" 
+          (click) = "cadastrar()"></button>
       </div>
     </div>
   </div>

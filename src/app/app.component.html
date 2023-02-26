@@ -1,6 +1,12 @@
 <p-menubar [model]="items">
-  <input type="text" pInputText placeholder="Login">
-  <input type="text" pInputText placeholder="Senha">
+  <span class="p-float-label">
+    <input id="login" type="text" pInputText> 
+    <label for="login">Login</label>
+  </span>
+  <span class="p-float-label">
+    <input id="senha" type="password" pInputText> 
+    <label for="senha">Senha</label>
+  </span>
   <button pButton label="Entrar"></button>
 </p-menubar>
 <router-outlet></router-outlet>

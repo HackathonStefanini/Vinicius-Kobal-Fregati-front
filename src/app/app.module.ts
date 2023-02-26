@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 import { MenubarModule } from 'primeng/menubar';
+import {InputTextModule} from 'primeng/inputtext';
 
 import { StefamonService } from './shared/services/stefamon.service';
 
@@ -27,6 +28,7 @@ import { StefamonService } from './shared/services/stefamon.service';
     CardModule,
     ButtonModule,
     MenubarModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent],
